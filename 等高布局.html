@@ -24,9 +24,54 @@
         .box3 {
             background-color: chartreuse;
         }
+ ul, li{
+      list-style: none;
+    }
+    .hairlines {
+      width: 300px;
+      margin: 100px auto;
+    }
+    .hairlines li{
+      position: relative;
+      border:none;
+      margin-top: 10px;
+    }
+    .hairlines li:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #cccccc;
+      width: 100%;
+      height: 1px;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+	.hairlines li:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #cccccc;
+      width: 100%;
+      height: 1px;
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+
     </style>
 </head>
 <body>
+	<ul class="hairlines">
+  <li>1</li>
+</ul>
+
+
+
     <div class="wrap">
         <div class="box1">
             333333
